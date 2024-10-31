@@ -13,6 +13,7 @@ body, html {
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 body.dark-mode {
@@ -20,9 +21,38 @@ body.dark-mode {
   color: white;
 }
 
+.top-right {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.top-right:hover {
+  transform: scale(1.1);
+}
+
+.theme-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
 /* Content styling */
 .center {
-  text-align: center; /* Only center text inside this div */
+  text-align: center;
 }
 
 .lottie{
@@ -93,6 +123,11 @@ h4 {
 
 
 @media (max-width: 768px) {
+  .top-right {
+    top: 15px;
+    right: 15px;
+    font-size: 1.75rem;
+  }
   .lottie {
     width: 50vw; /* 50% of the viewport width */
     height: auto; /* Auto height to maintain aspect ratio */
@@ -110,6 +145,11 @@ h4 {
 }
 
 @media (max-width: 480px) {
+  .top-right {
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+  }
   .lottie {
     width: 70vw; /* 70% of the viewport width for smaller screens */
     height: auto;
@@ -130,6 +170,11 @@ h4 {
 }
 
 @media (max-width: 375px) {
+  .top-right {
+    top: 8px; 
+    right: 8px;
+    font-size: 1.25rem;
+  }
   .lottie {
     width: 80vw; /* 80% of the viewport width for very small screens */
     height: auto;
