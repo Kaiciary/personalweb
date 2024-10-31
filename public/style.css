@@ -1,0 +1,145 @@
+/* Reset styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center content on the page */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Content styling */
+.center {
+  text-align: center; /* Only center text inside this div */
+}
+
+.lottie{
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Social buttons */
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.ig-btn {
+  background-color: #E1306C;
+}
+
+.linkedin-btn {
+  background-color: #0077B5;
+}
+
+.wa-btn {
+  background-color: #25D366;
+}
+
+.email-btn {
+  background-color: #D44638;
+}
+
+/* Icon alignment */
+.btn i {
+  text-align: center;
+}
+
+/* Hover effects */
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+.lottie {
+  margin: 0 auto; /* Center horizontally */
+  width: 300px; /* Default width */
+  height: 300px;
+}
+
+
+@media (max-width: 768px) {
+  .lottie {
+    width: 50vw; /* 50% of the viewport width */
+    height: auto; /* Auto height to maintain aspect ratio */
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+  }
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lottie {
+    width: 70vw; /* 70% of the viewport width for smaller screens */
+    height: auto;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
+  .btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+  .social-buttons {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .lottie {
+    width: 80vw; /* 80% of the viewport width for very small screens */
+    height: auto;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 0.75rem;
+  }
+  .btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+  .social-buttons {
+    gap: 3px;
+  }
+}
